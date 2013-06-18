@@ -114,7 +114,7 @@ class TestBinaryTree(unittest.TestCase):
 
     def test_BinarySearchTree_find(self):
         for i in range(15):
-            randelement = random.randint(0,self.itemsToGen -1)
+            randElement = random.randint(0,self.itemsToGen -1)
             self.assertEqual(self.bst.find(randelement).data,randelement)
 
 
