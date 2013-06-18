@@ -12,7 +12,7 @@ class BinarySearchTree():
             In place data insertion according to the rules of a BST
         '''
         newNode = Node(data)
-        if self.root is None: #insertition
+        if self.root is None: #insertion
             #This node in the tree is empty
             self.root = newNode
         else: #tree traversal
@@ -103,7 +103,7 @@ class TestBinaryTree(unittest.TestCase):
         correct = str(self.randNodeVal)
         self.assertEqual(str(testNode), correct)
 
-    def test_BineraySearchTree_insertation(self):
+    def test_BinarySearchTree_insertion(self):
         #checks whether the insertion (and to extent in order traversal) is implemented correctly
         correct = [i for i in range(self.itemsToGen)]
         check = self.bst.traversal().split(',')
@@ -115,7 +115,7 @@ class TestBinaryTree(unittest.TestCase):
     def test_BinarySearchTree_find(self):
         for i in range(15):
             randElement = random.randint(0,self.itemsToGen -1)
-            self.assertEqual(self.bst.find(randelement).data,randelement)
+            self.assertEqual(self.bst.find(randElement).data,randElement)
 
 
 
