@@ -1,8 +1,16 @@
 public class BinaryTree {
     private Node root = null;
+    private Node left = null;
+    private Node right = null;
 
-    public BinaryTree(){
+    public BinaryTree(){}
+    public BinaryTree(Node root){
+        this.root = root;
+    }
 
+    public void insert(int x){
+        Node t = new Node(x);
+        //TODO: Create insertion and look into implementing balancing
     }
 
     public class Node {
